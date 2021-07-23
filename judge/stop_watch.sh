@@ -1,7 +1,10 @@
 #!/bin/bash
 
-# run as :
-# $1 < $2 > $3
+# 名字：
+# 	stop_watch.sh - 打印可执行文件的执行时间
+#	
+# 概要：
+#	./stop_watch.sh <exe> [data.in] [data.out]
 
 eps=1000000
 start_time=$(date +%s%N)
@@ -21,4 +24,4 @@ else
 fi
 
 end_time=$(date +%s%N)
-printf "test: $(($end_time / $eps - $start_time / $eps)) ms\t"
+printf "elapsed time: $(($end_time / $eps - $start_time / $eps)) ms\t"
