@@ -1,0 +1,16 @@
+# binary
+rand.exe
+main.exe
+check.exe
+
+# log file
+check.log
+CompInfo.log
+Runtime.log
+diff.log
+
+# input and output file
+data.in
+data.out
+pt.out
+std.out
