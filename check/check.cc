@@ -8,13 +8,13 @@ int main() {
     std::ifstream input_ifs, output_ifs;
 
     // 读取题目输入
-    input_ifs.open("data.in", std::ifstream::in);
+    input_ifs.open("data.input", std::ifstream::in);
     int sum;
     input_ifs >> sum;
     input_ifs.close();
 
     // 读取代码输出
-    output_ifs.open("data.out", std::ifstream::in);
+    output_ifs.open("my.output", std::ifstream::in);
     int a, b;
     output_ifs >> a >> b;
     output_ifs.close();
@@ -28,6 +28,7 @@ int main() {
     // 检查答案是否合法
     if (a + b == sum) {
         std::cout << "Yes: " << a << " + " << b << " = " << sum << std::endl;
+        return 0;
     } else {
         std::cout << "No: " << a << " + " << b << " != " << sum << std::endl;
         return 1;   // Note: 必须返回非 0 值以终止对拍

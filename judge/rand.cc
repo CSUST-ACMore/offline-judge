@@ -2,17 +2,24 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-
 using ll = long long;
+using ull = unsigned long long;
+
 int MAX_T = 5;      //多组输入时的最大组数
-int MAX_N = 1000;
+int MAX_N = 10;
 int MAX_M = 5;
 int MAX_AI = 1e4;
+ll MAX_NUM = 2e9;
+ll MIN_NUM = -2e9;
 int T, N, M, K;
 
 //生成[x, y]范围的整数
 inline int random(int x, int y) {
-    return (ll)rand() * rand()%(y-x+1)+x;
+    return (ll) rand() * rand() % (y - x + 1) + x;
+}
+
+inline ll random(ll l, ll r) {
+    return (ull)rand() * rand() * rand() * rand() % (r - l + 1) + l;
 }
 
 int main() {
@@ -20,7 +27,7 @@ int main() {
     srand(tm);
 
     //write your code here~
-    cout << random(0, MAX_N) << endl;   
+	cout << random(MIN_NUM, MAX_NUM) << ' ' << random(MIN_NUM, MAX_NUM) << endl;
 
     /*  例子: 第一行样例组数T, 每组包含两行, 第一行为N, 第二行N个数一空格分隔
         T = random(1, MAX_T);
