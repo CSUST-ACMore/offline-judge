@@ -16,6 +16,7 @@ chmod +x judge.sh
 ```bash
 ./judge.sh
 ```
+
 ## Q&A
 
 ### Q1. 文件夹中，除了 C++ 文件和 judge.sh 之外的文件分别是存放什么的呢？
